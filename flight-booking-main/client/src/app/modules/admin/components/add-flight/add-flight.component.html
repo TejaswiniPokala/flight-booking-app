@@ -1,0 +1,71 @@
+<div class="add-flight-container">
+  <h1>Add Flight</h1>
+  <div class="add-flight">
+      <img src="https://img.freepik.com/free-vector/airplane-air-poster_1284-9439.jpg" alt="image" class="image">
+      <form (ngSubmit)="onSubmit()" class="form-container" autocomplete="off">
+          <div class="form-group">
+            
+            <label for="airline">Airline:</label>
+            <span class="asterisk_input"></span>
+            <input type="text" id="airline" name="airline" class="form-control" [(ngModel)]="formData.airline" placeholder="Enter airline" required>
+          </div>
+          <div class="form-group">
+            <label for="flightNumber">Flight Number:</label>
+            <span class="asterisk_input"></span>
+            <input type="text" id="flightNumber" name="flightNumber" class="form-control" [(ngModel)]="formData.flightNumber" placeholder="Enter flight number" >
+          </div>
+          <div class="form-group">
+            <label for="origin">Origin:</label>
+            <span class="asterisk_input"></span>
+            <!--<input type="text" id="origin" name="origin" class="form-control" [(ngModel)]="formData.origin" placeholder="Enter origin">-->
+            <select id="origin" name="origin" class="form-control" [(ngModel)]="formData.origin" >
+              <option value="" selected disabled>Origin City</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Kozhikode">Kozhikode</option>
+              <!-- Add more options for other states as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="destination">Destination:</label>
+            <span class="asterisk_input"></span>
+            <!--<input type="text" id="destination" name="destination" class="form-control" [(ngModel)]="formData.destination" placeholder="Enter destination">-->
+            <select id="destination" name="destination" class="form-control" [(ngModel)]="formData.destination">
+              <option value="" selected disabled>Destination City</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Kozhikode">Kozhikode</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="departureTime">Departure Time:</label>
+            <span class="asterisk_input"></span>
+            <input type="time" id="departureTime" name="departureTime" class="form-control" [(ngModel)]="formData.departureTime" placeholder="Select departure time">
+          </div>
+          <div class="form-group">
+            <label for="arrivalTime">Arrival Time:</label>
+            <span class="asterisk_input"></span>
+            <input type="time" id="arrivalTime" name="arrivalTime" class="form-control" [(ngModel)]="formData.arrivalTime" placeholder="Select arrival time">
+          </div>
+          <div class="form-group">
+            <label for="price">Price:</label>
+            <span class="asterisk_input"></span>
+            <input type="number" id="price" name="price" class="form-control" [(ngModel)]="formData.price" placeholder="Enter price">
+          </div>
+          <div class="form-group">
+            <label for="seatsAvailable">Seats Available:</label>
+              <span class="asterisk_input"></span>
+            <input type="number" id="seatsAvailable" name="seatsAvailable" class="form-control" [(ngModel)]="formData.seatsAvailable" placeholder="Enter seats available">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+  </div>
+</div>

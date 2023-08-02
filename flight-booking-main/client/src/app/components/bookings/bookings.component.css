@@ -1,0 +1,14 @@
+.bookings-container{
+    background-color:	#FFF5EE;
+    list-style-type: none;
+    width: 100%;
+    height:100%;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+.btn {
+    margin-left: 20px; /* Adjust this value to set the desired distance between buttons */
+  }

@@ -1,0 +1,15 @@
+.flights-container{
+    background-color:	#FFF5EE;
+    list-style-type: none;
+    padding: 40px;
+    height: 90vh;
+    overflow: auto;
+}
+
+.form-control{
+    width: fit-content;
+}
+
+.btn{
+    width: fit-content;
+}

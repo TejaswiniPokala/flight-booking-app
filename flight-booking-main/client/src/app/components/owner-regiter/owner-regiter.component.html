@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="registration-container">
+        <img src="https://media.istockphoto.com/id/1345187114/vector/woman-register-online-concept.jpg?s=612x612&w=0&k=20&c=DG2odC53BmOeyLlDHMF81_E2A-pQGfxyeC2mNidvK2Q=" alt="" class="image" />
+        <div class="card">
+            <form [formGroup]="regForm" #r="ngForm" (ngSubmit)="onSubmit(r.value)" class="form" autocomplete="off" >
+                <h2 class="heading text-center">Airline Registration</h2>
+                <div class="form-group mb-2">
+                    <label for="airline">Airline</label>
+                    <input placeholder="Enter airline" type="text" class="form-control" id="airline" formControlName="airline" >
+                    <div *ngIf="regForm.controls['airline'].touched && regForm.controls['airline']?.['errors']">
+                        <div *ngIf="regForm.controls['airline']?.['errors']?.['required']"
+                            class="error-message text-danger">
+                            Airline is required
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group mb-2">
+                    <label for="email">Email</label>
+                    <input placeholder="Enter email" type="text" class="form-control" id="email" formControlName="email" required>
+                    <div *ngIf="regForm.controls['email'].touched && regForm.controls['email']?.['errors']">
+                        <div *ngIf="regForm.controls['email']?.['errors']?.['required']" class="error-message text-danger">
+                            Email is required
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="form-group mb-2">
+                    <label for="password">Password</label>
+                    <input placeholder="Enter password" type="password" class="form-control" id="password" formControlName="password" required>
+                    <div *ngIf="regForm.controls['password'].touched && regForm.controls['password']?.['errors']">
+                        <div *ngIf="regForm.controls['password']?.['errors']?.['required']"
+                            class="error-message text-danger">
+                            Password is required
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4 w-100" [disabled]="regForm.invalid" >Sign Up</button>
+                <div class="mt-2"><a routerLink="/airline-login" class="mt-2">Already have an account? click here</a></div>
+            </form>
+        </div>
+    </div>
+</div>

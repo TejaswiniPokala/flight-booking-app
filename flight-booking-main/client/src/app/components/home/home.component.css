@@ -1,0 +1,180 @@
+.home-container {
+  height: 90vh;
+  background-color: rgb(206, 232, 255);
+  background-image: url('https://media.istockphoto.com/id/683815596/photo/airplane-landscape-with-big-white-passenger-airplane-is-flying-in-the-red-sky-over-the-clouds.jpg?s=612x612&w=0&k=20&c=aKzB_NTiPvzO3f_jxhfToFC4zeWIZN4ngAkUh3Uxy7Q=');
+  background-size: cover;
+  overflow: auto;
+  
+}
+
+#banner {
+  margin-top: 200px;
+}
+
+@media screen and (max-width:768px) {
+  #banner {
+    margin-top: 60px;
+  }
+}
+
+.body-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.input-container {
+  width: fit-content;
+  display: flex;
+  background-color:						#FA8072;
+  padding: 10px;
+  min-height: 60px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:975px) {
+  .input-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.input-field {
+  height: 100%;
+  width: 240px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width:975px) {
+  .input-field {
+    width: 100%;
+  }
+}
+
+.section-about {
+  min-height: 50vh;
+}
+
+.contact-section {
+  min-height: 50vh;
+  background-color: #FFF5EE;
+}
+
+.main-container {
+  height: 90vh;
+  overflow: auto;
+}
+
+.button {
+  color:white;
+  background-color:	#808080;
+  width: 120px;
+  height: 44px;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* .card{
+    box-shadow: 0 10px 25px #3a3a3a;
+} */
+
+footer {
+  background-color: #cecece;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 0 0 33.33%;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+
+.seat {
+  width: 60px;
+  height: 30px;
+  border: 1px solid grey;
+}
+
+.seat:hover {
+  background-color: #ffb22e;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.form-container {
+  display: flex;
+  overflow: auto;
+}
+
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.button-container {
+  margin-top: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* justify-content: end; */
+}
+
+.list-inline-item{
+  font-size: 30px;
+  margin: 10px;
+}
+
+.checkbox{
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+
